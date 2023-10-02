@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Exercicio2/style/style.css">
     <link href="https://fonts.cdnfonts.com/css/zekton-2" rel="stylesheet">
 </head>
 
@@ -20,7 +20,29 @@
         <div>
             <form method="post" action="/login">
                 <fieldset>
-                   <p>teste site</p>
+                    <h1>Conta</h1>
+                    <ul>
+                        <li>
+                            <label for="Nome">Nome : </label>
+                            <input id="Nome" type="text">
+                        </li>
+                        <li>
+                            <label for="Sobrenome"> Sobrenome : </label>
+                            <input id="Sobrenome" type="text">
+                        </li>
+                        <li>
+                            <label for="E-mail">E-mail : </label>
+                            <input id="E-mail" type="email">
+                        </li>
+                        <li>
+                            <label for="Senha">Senha : </label>
+                            <input type="password" id="Senha">
+                        </li>
+                        <li>
+                            <label for="confirmacao_senha">Repita a senha : </label>
+                            <input id="confirmacao_senha" type="password">
+                        </li>
+                    </ul>
                 </fieldset>
             </form>
         </div>
@@ -28,7 +50,58 @@
         <div>
             <form>
                 <fieldset>
-                    <p>teste site</p>
+                    <h1>Endereço</h1>
+                    <ul>
+                        <li>
+                            <label for="Logradouro">Logradouro : </label>
+                            <input id="Logradouro" type="text">
+                        </li>
+                        <li>
+                            <label for="Complemento"> Complemento : </label>
+                            <input id="Complemento" type="text">
+                        </li>
+                        <li>
+                            <label for="Cidade">Cidade : </label>
+                            <input id="Cidade" type="text">
+                        </li>
+                        <li>
+                            <label for="Estado">Estado : </label>
+                            <select id="Estado">
+                                <option value="">Selecione um estado</option>
+                                <option value="ac">Acre</option>
+                                <option value="al">Alagoas</option>
+                                <option value="am">Amazonas</option>
+                                <option value="ap">Amapá</option>
+                                <option value="ba">Bahia</option>
+                                <option value="ce">Ceará</option>
+                                <option value="df">Distrito Federal</option>
+                                <option value="es">Espírito Santo</option>
+                                <option value="go">Goiás</option>
+                                <option value="ma">Maranhão</option>
+                                <option value="mt">Mato Grosso</option>
+                                <option value="ms">Mato Grosso do Sul</option>
+                                <option value="mg">Minas Gerais</option>
+                                <option value="pa">Pará</option>
+                                <option value="pb">Paraíba</option>
+                                <option value="pr">Paraná</option>
+                                <option value="pe">Pernambuco</option>
+                                <option value="pi">Piauí</option>
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="rn">Rio Grande do Norte</option>
+                                <option value="ro">Rondônia</option>
+                                <option value="rs">Rio Grande do Sul</option>
+                                <option value="rr">Roraima</option>
+                                <option value="sc">Santa Catarina</option>
+                                <option value="se">Sergipe</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="to">Tocantins</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="CEP">CEP: </label>
+                            <input id="CEP">
+                        </li>
+                    </ul>
                 </fieldset>
             </form>
         </div>
@@ -36,7 +109,36 @@
         <div>
             <form>
                 <fieldset>
-                    <p>teste site</p>
+                    <h1>Perfil</h1>
+                    <ul>
+                        <li>
+                            <label for="Foto">Foto : </label>
+                            <input id="Foto" type="file">
+                            <p>Tamanho máximo de 700k,JPG,GIF, PNG.</p>
+                        </li>
+                        <li>
+                            <label for="NomePerfil">Nome : </label>
+                            <input id="NomePerfil" type="text">
+                        </li>
+                        <li>
+                            <label for="Site">Site : </label>
+                            <input id="Site" type="url">
+                            <p>Tem um site ou um blog: Coloque o endereço aqui.</p>
+                        </li>
+                        <li>
+                            <label for="Biografia">Biografia : </label>
+                            <textarea name="Biografia" style="width: 35em; height: 10em;"></textarea>
+                        </li>
+                        <li>
+                            <label for="Genero">Genero</label>
+                            <input type="radio" name="Genero" value="Masculino">
+                            <label for="Masculino">Masculino</label>
+                            <input type="radio" name="Genero" value="Feminino">
+                            <label for="Feminino">Feminino</label>
+                            <input type="radio" name="Genero" value="Outro">
+                            <label for="Outro">Outro</label>
+                        </li>
+                    </ul>
                 </fieldset>
             </form>
         </div>
@@ -44,7 +146,20 @@
         <div>
             <form>
                 <fieldset>
-                    <p>teste site</p>
+                    <h1>E-mails</h1>
+                    <ul>
+                        <li>
+                            <input id="concordancia1" type="checkbox">
+                            <label for="concordancia1">Tudo bem em enviar e-mails com mensagens de outros
+                                usuários.</label>
+                        </li>
+                        <li>
+                            <input id="concordancia2" type="checkbox">
+                            <label for="concordancia2">Tudo bem em enviar e-mails ocasionais com promoções sobre
+                                outros
+                                produtos.</label>
+                        </li>
+                    </ul>
                 </fieldset>
             </form>
 
