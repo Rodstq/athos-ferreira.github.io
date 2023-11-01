@@ -43,6 +43,7 @@ li,div {
 
 .ilustraProjeto {
     width: 100%;
+    height: 18em;
     border-radius: 15px;
 }
 
@@ -52,6 +53,10 @@ li,div {
 
 .descricao{
     min-height: 100px;
+}
+
+a{
+    display: block;
 }
 
 @media screen and (max-width: 900px) {
