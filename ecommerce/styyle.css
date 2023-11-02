@@ -4,16 +4,20 @@
 
 header{
     display: flex;
+    color:antiquewhite;
     align-items: center;
     background-color: rgb(67, 55, 55);
     height: 5em;
     width:100%;
-    margin-bottom: 3em;
-    justify-content:space-between;
+    justify-content:space-evenly;
+}
+
+header > a{
+    padding:20px;
+    color:antiquewhite;
 }
 
 .main{
-    border: 1px solid red;
     display: grid;
     grid-auto-columns: 10em auto;
 }
@@ -21,7 +25,6 @@ header{
 .menu{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     grid-column: 1;
     margin: 1em;
 }
@@ -31,7 +34,6 @@ header{
 }
 
 .produtos{
-    border: 1px solid red;
     grid-column: 2;
     display: flex;
     align-items: center;
@@ -42,7 +44,6 @@ header{
 }
 .descricao{
     height: 5em;
-    border: 1px solid red;
 }
 .imgprod{
     width: 100%;
@@ -77,7 +78,7 @@ footer{
     justify-content: flex-end;
 }
 
-footer > a, header > h1{
+footer > a{
     color:antiquewhite;
     padding: 0.5em;
 }
@@ -91,7 +92,6 @@ footer > a, header > h1{
 
 .main{
     width:100%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
 }

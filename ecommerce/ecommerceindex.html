@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>  loja </title>
     <link rel="stylesheet" href="styyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="../ecommerce/script.js"></script>
 </head>
 <body>
   <header id="header">
-    <h1> Rod-Commerce </h1>
+    <a href="../ecommerce/ecommerceindex.html">
+      <h1> Rod-Commerce </h1>
+    </a>    
     <input id="procurar">
-     <nav id="links">
-      <p class = 'produtosAdicionados'></p>
-    </nav>
+    <a href="carrinho.html">
+      <i id="produtos-adicionados"class="fa-sharp fa-solid fa-cart-shopping"></i>      
+    </a>
   </header>
 
 <main class="main">
@@ -42,14 +46,14 @@
 </div>
 
 
-  <div class="produtos">
+  <div class="produtos" id="produtos">
         <div class="exibidor"> 
           <img class="imgprod" src="./produtos/calca1.jpeg">
           <p class="descricao" > Calça Cargo Bolso Masculino Preto Hip Hop Casual Jogger Streetwear </p>
           <p id="preco"> $150.90 </p>
           <span>
             <a> 
-              <button class="addcarrinho">adicionar ao carrinho</button>
+              <button id="calca_branca" class="addcarrinho">adicionar ao carrinho</button>
             </a>
             <a href="finalizarcompra.html"> 
               <button> comprar </button>
@@ -62,7 +66,7 @@
           <p id="preco"> $119.90 </p>
           <span>
             <a> 
-              <button class="addcarrinho" >adicionar ao carrinho</button>
+              <button id="calca_preta" class="addcarrinho" >adicionar ao carrinho</button>
             </a>
             <a href="finalizarcompra.html"> 
               <button> comprar </button>
@@ -75,7 +79,7 @@
           <p id="preco"> $119.90 </p>
           <span>
             <a> 
-              <button class="addcarrinho" >adicionar ao carrinho</button>
+              <button id="calca_preta_graph"class="addcarrinho" >adicionar ao carrinho</button>
             </a>
             <a href="finalizarcompra.html"> 
               <button> comprar </button>
@@ -88,7 +92,7 @@
           <p id="preco"> $119.90 </p>
           <span>
             <a> 
-              <button class="addcarrinho" >adicionar ao carrinho</button>
+              <button id="moletom_black-white" class="addcarrinho" >adicionar ao carrinho</button>
             </a>
             <a href="finalizarcompra.html"> 
               <button> comprar </button>
@@ -101,7 +105,7 @@
           <p id="preco"> $119.90 </p>
           <span>
             <a> 
-              <button class="addcarrinho" >adicionar ao carrinho</button>
+              <button id="moletom-ziper-black-white" class="addcarrinho" >adicionar ao carrinho</button>
             </a>
             <a href="finalizarcompra.html"> 
               <button> comprar </button>
@@ -114,7 +118,7 @@
           <p id="preco"> $119.90 </p>
           <span>
             <a> 
-              <button class="addcarrinho" >adicionar ao carrinho</button>
+              <button id="kimono-dragon" class="addcarrinho" >adicionar ao carrinho</button>
             </a>
             <a href="finalizarcompra.html"> 
               <button> comprar </button>

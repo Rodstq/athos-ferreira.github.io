@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
     <link rel="stylesheet" href="styyle.css">
-    <script src="script.js" defer ></script>
+    <link rel = "stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
     <title>Document</title>
 </head>
 
 <body>
     <header id="header">
-        <h1> loja </h1>
-        <input>
+        <a href="../ecommerce/ecommerceindex.html">
+            <h1> Rod-Commerce </h1>
+          </a>  
+        <input id="procurar">
+        <a href="carrinho.html">
+        <i id="produtos-adicionados"class="fa-sharp fa-solid fa-cart-shopping"></i>      
+        </a>
+      </header>
+<main class="main">     
+    <h1>Carrinho de Compras</h1>
+    <!-- Container to display the cart content -->
+    <div class="produtos" id="exibidor"></div>
+</main>
 
-         <nav id="links">
-         <p>Carrinho</p>
-        </nav>
-    </header>
-
- <div class = "produtosAdicionados">
-    <p> produtos </p>
- </div>
+<script src="shopping.js"></script>
+ 
     
 </body>
 </html>
