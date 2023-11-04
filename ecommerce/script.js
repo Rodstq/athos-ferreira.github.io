@@ -1,13 +1,20 @@
-
+// adicionando todos os botoes de add ao carrinho na constante buttons
 const buttons = document.getElementsByClassName("addcarrinho");
+//adicionando elemento html que vai mostrar contagem do carrinho na variavel
 const carrinhoCount = document.getElementById("produtos-adicionados");
+//atribuindo valor da variavel de sessao count
 var countAdicionados = sessionStorage.getItem("count");
 const sent = [];
+const sessionSent = sessionStorage.getItem("current");
 
-if(sent==null){
+// if( sessionSent == 0 || sessionSent==null){
 
-}else{
-    sent.push(sessionStorage.getItem("current"));
+// }else{
+//     sent.push(sessionStorage.getItem("current"));
+// }
+
+if( sent.length != 0 || sessionSent !=null){
+    sent.push(sessionStorage.getItem("current"));       
 }
 
 
@@ -38,21 +45,3 @@ const buttonPressed = function (e) {
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", buttonPressed);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// for(let i = 0; i<buttons.length; i++){
-//     if(button.getAttribute("id") == buttons[i].getAttribute("id")){
-//         button=buttons[i];
-//     }
-// }
