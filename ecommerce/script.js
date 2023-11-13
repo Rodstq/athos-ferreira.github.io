@@ -1,64 +1,62 @@
 // adicionando todos os botoes de add ao carrinho na constante buttons
-const buttons = document.getElementsByClassName("addcarrinho");
+var buttons = document.getElementsByClassName("addcarrinho");
 //adicionando elemento html que vai mostrar contagem do carrinho na variavel
-const carrinhoCount = document.getElementById("produtos-adicionados");
+var carrinhoCount = document.getElementById("produtos-adicionados");
 //atribuindo valor da variavel de sessao count
-var countAdicionados = sessionStorage.getItem("count");
+var countAdicionadosString = checkStringOrNull(sessionStorage.getItem("count"));
+var countAdicionados;
+if (countAdicionadosString != " ") {
+    countAdicionados = parseInt(countAdicionadosString);
+}
+else {
+    countAdicionados = 0;
+}
+// adicionando numero ao lado de icone carrinho apenas de houverem produtos adicionados ao carrinho
+if (parseInt(countAdicionadosString) != undefined && parseInt(countAdicionadosString) > 0) {
+    carrinhoCount.innerHTML = countAdicionadosString;
+}
 // definindo array com todos elementos
-const sent = [];
+var sent = [];
 //definindo variavel para obter valor de produtos atualizados
-const sessionSent = sessionStorage.getItem("current");
+var sessionSent = checkStringOrNull(sessionStorage.getItem("current"));
 //definindo variavel preco total
-const valorAtual = sessionStorage.getItem("valorAtual");
-let valorTotalInt=0;
-
-// if( sessionSent == 0 || sessionSent==null){
-
-// }else{
-//     sent.push(sessionStorage.getItem("current"));
-// }
-
-if( sent.length != 0 || sessionSent !=null){
-    sent.push(sessionStorage.getItem("current"));       
+var valorAtual = parseFloat(checkStringOrNull(sessionStorage.getItem("valorAtual")));
+var valorTotalInt = 0;
+if (sent.length != 0 || sessionSent != null) {
+    sent.push(sessionSent);
 }
-
-
-if(countAdicionados==0){
-
-} else {
-    carrinhoCount.innerHTML = countAdicionados;
-
+// adicionando numero ao lado de icone carrinho apenas de houverem produtos adicionados ao carrinho
+if (countAdicionados > 0) {
+    carrinhoCount.innerHTML = countAdicionadosString;
 }
-
-if(valorAtual > 0 && valorAtual!= null){
-    valorTotalInt= parseFloat(valorAtual);
+if (valorAtual > 0 && valorAtual != null) {
+    valorTotalInt = valorAtual;
 }
-
-const buttonPressed = function (e) {
-    let currentElement = e.target.parentElement.parentElement.parentElement;
+function checkStringOrNull(s) {
+    if (s == null) {
+        return " ";
+    }
+    else {
+        return s;
+    }
+}
+var buttonPressed = function (e) {
+    var currentElement = e.target.parentElement.parentElement.parentElement;
     ++countAdicionados;
-    console.log(`Você adicionou: ${countAdicionados} produtos ao carrinho`);
-
+    console.log("Voc\u00EA adicionou: ".concat(countAdicionados, " produtos ao carrinho"));
     sent.push(currentElement.outerHTML);
-    carrinhoCount.innerHTML = countAdicionados;
-    const myStringData = JSON.stringify(sent);
+    carrinhoCount.innerHTML = countAdicionados.toString();
+    var myStringData = JSON.stringify(sent);
     console.log(sent);
-
-
     sessionStorage.setItem("string", myStringData);
-
-    const valorTotalString = currentElement.children[2].innerHTML;
-
-    const adicionados = countAdicionados;
-    sessionStorage.setItem("count", adicionados);
-
-    let valorString = valorTotalString.slice(2,valorTotalString.length-1);
-    let valorInt = parseFloat(valorString);
+    var valorTotalString = currentElement.children[2].innerHTML;
+    var adicionados = countAdicionados;
+    sessionStorage.setItem("count", adicionados.toString());
+    var valorString = valorTotalString.slice(2, valorTotalString.length - 1);
+    var valorInt = parseFloat(valorString);
     valorTotalInt += valorInt;
-    sessionStorage.setItem("valor",valorTotalInt);
-
-}
-
-for (let i = 0; i < buttons.length; i++) {
+    sessionStorage.setItem("valor", valorTotalInt.toString());
+};
+for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", buttonPressed);
 }
