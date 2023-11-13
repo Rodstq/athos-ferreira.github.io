@@ -3,6 +3,12 @@
     padding: 0px;
     font-family: 'Zekton', sans-serif;
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
 
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0)), url("1000_F_559133954_0kKDwhaWzU2ltOH4ylCkP1B4f7N6XkPD.jpg");
@@ -33,9 +39,12 @@ li,div {
 .exibidor {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     margin: 2em;
     width: 20em;  
+    height: 30em;
+    min-height: 25em;
     border: 0.01em solid rgb(123, 6, 218);
     border-radius: 1em;
     background-color: rgba(0, 0, 0, 0.658);
@@ -43,7 +52,6 @@ li,div {
 
 .ilustraProjeto {
     width: 100%;
-    height: 18em;
     border-radius: 15px;
 }
 
