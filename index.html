@@ -5,38 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="cyber.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="https://fonts.cdnfonts.com/css/zekton-2" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>projetos</h1>
-    </header>
     <main>
-        <div class="container">
-            <a href="sneakers/sneakersindex.html">
-                <div class="exibidor">
-                    <img class="ilustraProjeto" src="sneakers.png">
-                    <p class="titulo"> Travis Scott X Jordan </p>
-                    <p class="descricao"> Lista de algumas colaborações do rapper e a marca </p>
-                </div>
-            </a>
-
-            <a href="ecommerce/html/ecommerceindex.html">
-                <div class="exibidor">
-                    <img class="ilustraProjeto" src="ecommerce.png">
-                    <p class="titulo"> E-commerce  </p>
-                    <p class="descricao"> Site de venda de roupas e acessórios </p>
-                </div>
-            </a>
-            <div class="exibidor">
-                <img class="ilustraProjeto" src="Prancheta1.png">
-                <p class="titulo"> Ponto de venda </p>
-                <p class="descricao"> Sistemda de PDV para cadastro,registro e atualização de clientes, fornecedores e produtos, além de módulo de vendas. Projeto feito em java sql docker </p>
+        <header class="header">
+            <a class="links" href="#article">Sobre :</a>
+            <a class="links" href="#">Projetos</a>
+            <a class="links" href="#">Contato</a>
+        </header>   
+        <video class="video" src="/The Matrix Raining Green Code Backdrop for OBS - Teams, Zoom calls in 4k.mp4" muted autoplay></video>
+            <article class="apresentacao"> 
+                <div class="imgDisplay"> 
+                    <img class="img" src="/Untit2led.png">
+                    <div>
+                        <div>
+                        <i class="devicon-linkedin-plain"></i>
+                        <a href="https://www.linkedin.com/in/athos-ferreira/" id="link">linkedin</a>
+                        </div>
+                        <div>
+                        <i class="devicon-github-original"></i>
+                        <a href="https://github.com/Rodstq" id="link">github</a>
+                        </div>
+                        
+                    </div>
+                </div>          
+                <div class="about">
+                    <p class="sobre-mim"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nobis iusto quas quos rem tempore delectus voluptatem veniam labore? Neque nemo quia obcaecati cum aut mollitia vitae fugit ratione veniam.
+                    Excepturi esse iure voluptates voluptatem, quod deleniti, perspiciatis dolor nisi dignissimos illum sapiente, velit impedit quibusdam eos. Nemo, sed, nisi praesentium earum accusamus nesciunt porro illo explicabo, quis saepe pariatur! </p>
+                    <div class="icons">
+                        <i class="devicon-git-plain colored"></i>
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-mysql-plain-wordmark"></i>
+                        <i class="devicon-react-original-wordmark colored"></i>
+                        <i class="devicon-typescript-plain colored"></i>
+                        <i class="devicon-css3-plain-wordmark colored"></i>
+                    </div> 
+                </div>           
             </div>
+            </article> 
+    
+        <section class="display">
+            <article class="tabs">
+                <p class="tablink s">Travis Scott X Jordan</p>
+                <p class="tablink e">E-commerce</p>
+                <p class="tablink p">Ponto de venda</p>
+            </article>
+            
+            <article class="projects">
+                <div class="projeto s">
+                    <img class="ilustraProjeto" src="/sneakers.png">
+                    <div class="descricao">
+                        <p class="titulo">Travis Scott X Jordan</p>
+                        <p  class="resumo-projeto"> Lista de algumas colaborações do rapper e a marca </p>
+                        <a href="sneakers/sneakersindex.html">ver projeto</a>
+                    </div>                    
+                    
+                </div>
+        
+                    <div class="projeto e">
+                        <img class="ilustraProjeto" src="/ecommerce.png">
+                        <div class="descricao">
+                            <p class="titulo">E-commerce</p>
+                            <p class="resumo-projeto"> Site de venda de roupas e acessórios Sistemda de PDV para cadastro,registro e atualização de clientes, fornecedores e produtos, além de módulo de vendas. Projeto feito em java sql docker </p>
+                            <a href="ecommerce/html/ecommerceindex.html">ver projeto </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="projeto p">
+                        <img class="ilustraProjeto" src="/Prancheta1.png">
+                        <div class="descricao">
+                            <p class="titulo">Ponto de venda</p>
+                            <p class="resumo-projeto"> Sistemda de PDV para cadastro,registro e atualização de clientes, fornecedores e produtos, além de módulo de vendas. Projeto feito em java sql docker </p>
+                        </div>      
+                    </div>
+            </article>       
+        </section>
+        <section class="contatos">
+            <form action="">
+                <label for="nome"> Nome </label>
+                <input type="text" id="nome">
+                <label for="nome"> Nome </label>
+                <input type="text" id="nome">
+                <label for="nome"> Nome </label>
+                <input type="text" id="nome">
+                <label for="nome"> Nome </label>
+                <input type="text" id="nome">
+            </form>
+        </section>
     </main>
+    <footer class="footer">
+        <a href="#">voltar ao topo</a>
+    </footer>
 </body>
 
 </html>
